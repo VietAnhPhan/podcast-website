@@ -1,0 +1,369 @@
+:root {
+    --primary-color: #0C1231;
+    --secondary-color: #445FE8;
+    --dark-color: #0C1231B2;
+    --blue-color: #5B98F4;
+    --light-blue-color: #B2EBFF;
+    --light-color: #F3F3F3;
+    --grey-color: #F7F7FA;
+    --grey-color-2: #E8EBF9;
+    --grey-color-3: #F7F7F733;
+    --footer-color: #0C1231;
+
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-color: #e5e5e5;
+    --border-radius: 0.25rem;
+    --transition: 0.3s;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./assets/fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.p-t27 {
+    padding-top: 27px;
+}
+
+.p-b27 {
+    padding-bottom: 27px;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'BebasNeue';
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex {
+    display: flex;
+    ;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+.gap-45 {
+    gap: 45px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.gap-36 {
+    gap: 36px;
+}
+
+.subscribe {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 13px 32px;
+    border-radius: 8px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 20px;
+    color: var(--dark-color);
+}
+
+.active-link {
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 2ch;
+    height: 4px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.full-width-video {
+    width: 100%;
+    height: auto;
+}
+
+.linear-gradient {
+    position: relative;
+    ;
+}
+
+.linear-gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background: linear-gradient(to bottom, rgba(231, 10, 116, 0.5), rgba(26, 42, 184, 0.5));
+    z-index: 1;
+}
+
+.d-absolute {
+    position: absolute;
+}
+
+.d-relative {
+    position: relative;
+}
+
+.intro {
+    top: 104px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    backdrop-filter: blur(32px);
+    padding: 38px 65px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.intro h1 {
+    font-family: 'BebasNeue';
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    color: var(--grey-color);
+    font-weight: 600;
+    letter-spacing: 5px;
+    width: max-content;
+}
+
+.intro p {
+    color: var(--grey-color);
+    opacity: 70%;
+    font-weight: 400;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 24px;
+    background-color: var(--grey-color);
+    border-radius: 16px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card-published {}
+
+.card-title {}
+
+.profile-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.p-b56 {
+    padding-bottom: 56px;
+}
+
+.heading-2 {
+    font-size: 5rem;
+    font-family: 'BebasNeue';
+    text-transform: uppercase;
+}
+
+.gap-12 {
+    gap: 12px
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.p-t24 {
+    padding-top: 24px;
+}
+
+.p-b32 {
+    padding-bottom: 32px;
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.inner-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.card-image {
+    min-height: 300px;
+    flex-basis: 0;
+    display: block;
+    object-fit: cover;
+}
+
+.btn-more {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 24px 151px;
+    font-weight: 600;
+    color: var(--grey-color);
+    border-radius: 8px;
+}
+
+.m-t56 {
+
+    margin-top: 56px;
+}
+
+.justify-content-c {
+    justify-content: center;
+}
+
+.fs-3 {
+    font-size: 3rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.blue-color {
+    color: var(--secondary-color);
+}
+
+.schedule-items>*:not(:first-child) {
+    border-top: 1px solid #0C123166;
+}
+
+.schedule-items>* {
+    padding: 32px;
+}
+
+.light-blue {
+    background-color: var(--light-blue-color);
+}
+
+.subhead-line {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.achievements-item>p:first-child::before {
+
+    content: "•";
+    /* Bullet point */
+    color: blue;
+    /* Bullet color */
+    font-size: 0.5em;
+    /* Adjust size if needed */
+    margin-right: 8px;
+    /* Space between bullet and text */
+}
+
+.gap-44 {
+    gap: 44px;
+}
+
+.gap-104 {
+    gap: 104px;
+}
+
+.justify-content-sa{
+    justify-content: space-around;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.p-t50{
+    padding-top: 50px;
+}
+
+.p-b50{
+    padding-bottom: 50px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
