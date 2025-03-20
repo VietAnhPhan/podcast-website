@@ -10,6 +10,52 @@
 </head>
 
 <body>
+    <style>
+        .post:nth-child(2) .flex-70 {
+            order: 2;
+        }
+
+        .line-one,
+        .line-two {
+            display: flex;
+            gap: 24px;
+
+        }
+        .line-two{
+            padding-top: 24px;
+        }
+
+        .testimonial {
+            background-color: #E8EBF9;
+            border-radius: 24px;
+            padding: 20px;
+            flex: 0 0 490px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .country {
+                color: var(--text-color-testimonial-country);
+            }
+
+            .response {
+                font-size: 13px;
+            }
+
+            .avatar{
+                max-width: 50px;
+            }
+            .star-icon{
+                max-width: 20px;
+            }
+        }
+        .client-ratings-icon{
+            img{
+                max-width: 48px;
+                margin-left: -16px;
+            }
+        }
+    </style>
     <header class="flex container justify-content-sb flex align-items-c p-t27 p-b27">
         <div class="logo">
             <a href="#"><img src="./assets/icons/Union.svg" alt="Logo Lullaby"></a>
@@ -208,7 +254,8 @@
                 <h2 class="fs-3">ABOUT <span class="blue-color">lullaby</span></h2>
                 <div class="about-description">
                     <p class="subhead-line">TUNE IN, TUNE OUT</p>
-                    <p class="color__grey">Our web is your gateway to a serene audio experience designed to help you unwind, relax, and
+                    <p class="color__grey">Our web is your gateway to a serene audio experience designed to help you
+                        unwind, relax, and
                         drift into a peaceful slumber.</p>
                 </div>
                 <div class="achievements flex-col gap-30 pt-25">
@@ -280,8 +327,29 @@
         </div>
     </section>
 
-    <section class="testimonial container">
-        <h3>Don’t take our word for it. See what our clients say.</h3>
+    <section class="testimonial-area">
+        <div class="flex justify-content-sb">
+            <h3 class="fs-3 container">Don’t take our word for it.<br> See what our clients say.</h3>
+            <div class="flex align-items-c gap-24">
+                <div class="client-ratings-icon">
+                    <img src="./assets/avatar/star-ratings-1.png" alt="Star Rating 1">
+                    <img src="./assets/avatar/star-ratings-2.png" alt="Star Rating 2">
+                    <img src="./assets/avatar/star-ratings-3.png" alt="Star Rating 3">
+                    <img src="./assets/avatar/star-ratings-4.png" alt="Star Rating 4">
+                    <img src="./assets/avatar/star-ratings-5.png" alt="Star Rating 5">
+                </div>
+                <div class="flex flex-col">
+                    <div>
+                        <img src="./assets/icons/star.svg" alt="Star Ratings">
+                        <img src="./assets/icons/star.svg" alt="Star Ratings">
+                        <img src="./assets/icons/star.svg" alt="Star Ratings">
+                        <img src="./assets/icons/star.svg" alt="Star Ratings">
+                        <img src="./assets/icons/star.svg" alt="Star Ratings">
+                    </div>
+                    <span>From 300+ reviews</span>
+                </div>
+            </div>
+        </div>
         <div class="testimonials">
 
         </div>
