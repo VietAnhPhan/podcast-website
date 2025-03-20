@@ -8,7 +8,11 @@
     --grey-color: #F7F7FA;
     --grey-color-2: #E8EBF9;
     --grey-color-3: #F7F7F733;
+    --grey-color-4: rgba(12, 18, 49, 0.7);
+    --grey-color-5: rgba(34, 38, 62, 0.7);
     --footer-color: #0C1231;
+    --white-color: #F7F7F7;
+
 
     --shadow-color: rgba(0, 0, 0, 0.1);
     --border-color: #e5e5e5;
@@ -67,6 +71,7 @@ h1,
 h2,
 h3 {
     font-family: 'BebasNeue';
+    letter-spacing: 3px;
 }
 
 .container {
@@ -76,8 +81,11 @@ h3 {
 
 .flex {
     display: flex;
-    ;
 }
+
+
+
+
 
 .justify-content-sb {
     justify-content: space-between;
@@ -97,6 +105,18 @@ h3 {
 
 .gap-36 {
     gap: 36px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-16{
+    gap: 16px;
+}
+
+.gap-12{
+    gap: 12px;
 }
 
 .subscribe {
@@ -242,6 +262,12 @@ nav a {
 
 .inner-content {
     padding-top: 80px;
+    /* padding-bottom: 80px; */
+}
+
+.container__fluid {
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding-bottom: 80px;
 }
 
@@ -298,109 +324,165 @@ nav a {
     /* Space between bullet and text */
 }
 
-.gap-44 {
-    gap: 44px;
+.gap-30 {
+    gap: 30px;
 }
 
 .gap-104 {
     gap: 104px;
 }
 
-.justify-content-sa{
+.justify-content-sa {
     justify-content: space-around;
 }
 
-.justify-content-start{
+.justify-content-start {
     justify-content: flex-start;
 }
 
-.justify-content-end{
+.justify-content-end {
     justify-content: flex-end;
 }
 
-.p-t50{
+.p-t50 {
     padding-top: 50px;
 }
 
-.p-b50{
+.p-b50 {
     padding-bottom: 50px;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.blue-color-bg{
+.blue-color-bg {
     background-color: var(--blue-color);
 }
 
 @media screen and (min-width:0) {
-    .btn-more{
+    .flex-70 {
+        max-width: 100%;
+
+    }
+    
+    
+    .flex-30 {
+        max-width: 100%;
+
+    }
+    .btn-more {
         padding: 16px 101px;
     }
-    .intro{
+
+    .intro {
         padding: 10px 20px;
         width: 90%;
     }
-    .fs-sm{
+
+    .fs-sm {
         font-size: 6px;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    .flex-1{
+
+    .flex-1 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .flex-wrap{
+
+    .flex-wrap {
         flex-wrap: wrap;
     }
 
-    .about img{
+    .about img {
         max-width: 120px;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 2rem;
         width: 100%;
     }
-    .schedule-items>*{
+
+    .schedule-items>* {
         padding: 0;
         padding-top: 24px;
         padding-bottom: 10px;
     }
+
+    .flex-col-md {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-25 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width:992px) {
-    .fs-sm{
+    .flex-25 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .flex-col-md {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-70 {
+        max-width: 70%;
+        flex: 1;
+    }
+    
+    
+    .flex-30 {
+        max-width: 30%;
+        flex: 1;
+    }
+    .about img {
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .fs-sm {
         font-size: 16px;
     }
-    nav{
+
+    nav {
         display: block;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 5.5rem;
         width: max-content;
     }
-    .intro{
+
+    .intro {
         padding: 38px 65px;
         width: fit-content;
     }
-    .flex-1{
+
+    .flex-1 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .flex-wrap{
+
+    .flex-wrap {
         flex-wrap: nowrap;
     }
+
     .schedule-items>* {
         padding: 32px;
     }
-    .btn-more{
+
+    .btn-more {
         padding: 24px 151px;
     }
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -408,10 +490,10 @@ img{
 .intro {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     backdrop-filter: blur(32px);
- 
+
     border-radius: 8px;
     z-index: 2;
 }
@@ -419,7 +501,7 @@ img{
 .intro h1 {
     font-family: 'BebasNeue';
     text-transform: uppercase;
-   
+
     color: var(--grey-color);
     font-weight: 600;
     letter-spacing: 5px;
@@ -432,7 +514,7 @@ img{
     font-weight: 400;
 }
 
-.gap-8{
+.gap-8 {
     gap: 8px;
 }
 
@@ -446,4 +528,83 @@ img{
     font-weight: 600;
     color: var(--grey-color);
     border-radius: 8px;
+}
+
+.p-l-18 {
+    padding-left: 18px;
+}
+
+.p-l-16{
+    padding-left: 16px;
+}
+
+.color__White {
+    color: var(--white-color);
+}
+
+form input[type="email"] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: var(--blue-color);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+form input[type="checkbox"] {
+    margin-right: 16px;
+}
+
+::placeholder {
+    color: var(--white-color);
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.form__input {
+    margin-top: 24px;
+
+}
+
+form button {
+    max-width: fit-content;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    padding: 13px 32px;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.color__grey {
+    color: var(--grey-color-4);
+}
+
+.color__grey_post {
+    color: var(--grey-color-5);
+}
+
+.post__title {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    color: var(--grey-color-5);
+}
+
+.fw-normal {
+    font-weight: 500;
+}
+
+.post {
+    border-top: solid 0.5px rgba(12, 18, 49, 0.4);
+    padding-top: 32px;
+}
+
+.post:not(:first-child) {
+    margin-top: 64px;
 }

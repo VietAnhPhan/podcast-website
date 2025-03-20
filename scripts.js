@@ -1,10 +1,11 @@
-const postDiv = document.querySelector(".posts");
+const postsDiv = document.querySelector(".posts");
 const testiominalDiv = document.querySelector(".testimonials");
 
 const posts = [
     {
         title: "The Tech Revolution: How Innovation Shapes Our World",
         author: "KRISTIN WATSON",
+        author_avatar:"./assets/images/profiles/47df98b128a92b03283e3e18ae7f0e19.jpg",
         post_date: "Mar 6, 2024",
         category: "Technology",
         minute_read: "20 minutes",
@@ -13,6 +14,7 @@ const posts = [
     {
         title: "Well-Read: Book Reviews, Recommendations, and Literary Musings",
         author: "DARRELL STEWARD",
+        author_avatar:"./assets/images/profiles/c1828a1b9ee607310b714b4c0c30f131.jpg",
         post_date: "Mar 6, 2024",
         category: "Life Style",
         minute_read: "20 minutes",
@@ -21,6 +23,7 @@ const posts = [
     {
         title: "Life's Little Pleasures: Finding Joy in Everyday Moments",
         author: "JACOB JONES",
+        author_avatar:"./assets/images/profiles/fb1f9db913bbebe3b7a90ad31591aae6.jpg",
         post_date: "Mar 6, 2024",
         category: "Life Style",
         minute_read: "20 minutes",
@@ -31,28 +34,52 @@ const posts = [
 
 const postArea = (function () {
     posts.forEach((post) => {
-
+        const postDiv= document.createElement("div");
         const postContentDiv = document.createElement("div");
         const postImageDiv = document.createElement("div");
+        const postDetail = document.createElement("div");
+        const postSubDetail= document.createElement("div");
+        const authorWrapper = document.createElement("div");
 
         const title = document.createElement("h2");
         const author = document.createElement("h4");
+        const authorAvatar= document.createElement("img");
         const category = document.createElement("span");
         const minuteRead = document.createElement("span");
         const postedDate = document.createElement("span");
         const imageUrl = document.createElement("img");
 
+        postDiv.classList.add("flex","gap-20", "post","flex-wrap");
+        postContentDiv.classList.add("flex-70", "gap-16", "flex", "flex-col");
+        postImageDiv.classList.add("flex-30");
+        postDetail.classList.add("post__detail", "flex", "justify-content-sb", "color__grey", "align-items-c","flex-wrap");
+        title.classList.add("post__title");
+        authorAvatar.classList.add("profile-icon");
+        authorWrapper.classList.add("flex", "align-items-c", "gap-12");
+        category.classList.add("p-l-16");
+        minuteRead.classList.add("p-l-16");
+        postedDate.classList.add("p-l-16");
+
         title.textContent = post.title;
         author.textContent = post.author;
+      
         category.textContent = post.category;
         minuteRead.textContent = post.minute_read;
-        imageUrl.textContent = post.image_url;
-        imageUrl.setAttribute("src", post.image_url);
         postedDate.textContent = post.post_date;
 
-        postContentDiv.append(title, author, category, minuteRead, postedDate);
+        imageUrl.textContent = post.image_url;
+
+        authorAvatar.setAttribute("src", post.author_avatar);
+        imageUrl.setAttribute("src", post.image_url);
+        
+
+        authorWrapper.append(authorAvatar, author);
+        postSubDetail.append(category, minuteRead, postedDate);
+        postDetail.append(authorWrapper, postSubDetail);
+        postContentDiv.append(title,postDetail);
         postImageDiv.append(imageUrl);
         postDiv.append(postContentDiv, postImageDiv);
+        postsDiv.append(postDiv);
     });
 })();
 
