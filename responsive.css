@@ -1,0 +1,191 @@
+@media screen and (min-width:0) {
+    h2{
+        margin-bottom: 16px;
+    }
+    .flex-70 {
+        max-width: 100%;
+
+    }
+
+
+    .flex-30 {
+        max-width: 100%;
+
+    }
+
+    .btn-more {
+        padding: 16px 101px;
+    }
+
+    .intro {
+        padding: 10px 20px;
+        width: 90%;
+    }
+
+    .fs-sm {
+        font-size: 6px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .flex-1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        max-width: 120px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .schedule-items>* {
+        padding: 0;
+        padding-top: 24px;
+        padding-bottom: 10px;
+    }
+
+    .flex-col-md {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-25 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        form {
+            width: 100%;
+        }
+
+        .footer__column:first-child {
+            flex: 0 0 100%;
+        }
+
+        .footer__column:not(:first-child) {
+            flex: 0 0 30%;
+        }
+    }
+
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .page__heading{
+        font-size: 32px;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    .flex-25 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .flex-col-md {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-70 {
+        max-width: 70%;
+        flex: 1;
+    }
+
+
+    .flex-30 {
+        max-width: 30%;
+        flex: 1;
+    }
+
+    .about img {
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .fs-sm {
+        font-size: 16px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .intro h1 {
+        font-size: 5.5rem;
+        width: max-content;
+    }
+
+    .intro {
+        padding: 38px 65px;
+        width: fit-content;
+    }
+
+    .flex-1 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .flex-wrap {
+        flex-wrap: nowrap;
+    }
+
+    .schedule-items>* {
+        padding: 32px;
+    }
+
+    .btn-more {
+        padding: 24px 151px;
+    }
+
+    footer {
+        form {
+            width: 70%;
+        }
+
+        .footer__column:first-child {
+            flex: 4;
+        }
+
+        .footer__column:not(:first-child) {
+            flex: 1;
+            padding-top: 80px;
+        }
+    }
+
+    .footer__bottom {
+        padding-top: 80px;
+    }
+
+    .footer__column {
+        ul {
+            padding-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .flex-1 {
+        flex: 1;
+    }
+    
+    .flex-2 {
+        flex: 2;
+    }
+}

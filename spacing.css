@@ -1,0 +1,12 @@
+
+@media screen and (min-width:0) {
+  .inner-content{
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width:992px) {
+    .inner-content{
+        padding-top: 80px;
+      }
+}

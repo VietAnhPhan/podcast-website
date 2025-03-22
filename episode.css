@@ -1,0 +1,25 @@
+
+
+@media screen and (min-width:0) {
+    .episode__nav{
+        display: block;
+        width: 100%;
+       
+        li{
+            /* margin-right: 56px;
+            margin-bottom: 20px; */
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            row-gap: 20px;
+            column-gap: 50px;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    /* .episode__nav{
+        display: block;
+    } */
+}
