@@ -21,7 +21,8 @@
             gap: 24px;
 
         }
-        .line-two{
+
+        .line-two {
             padding-top: 24px;
         }
 
@@ -42,15 +43,17 @@
                 font-size: 13px;
             }
 
-            .avatar{
+            .avatar {
                 max-width: 50px;
             }
-            .star-icon{
+
+            .star-icon {
                 max-width: 20px;
             }
         }
-        .client-ratings-icon{
-            img{
+
+        .client-ratings-icon {
+            img {
                 max-width: 48px;
                 margin-left: -16px;
             }
@@ -327,7 +330,7 @@
         </div>
     </section>
 
-    <section class="testimonial-area">
+    <section class="testimonial-area inner-content container" style="overflow:hidden;">
         <div class="flex justify-content-sb">
             <h3 class="fs-3 container">Don’t take our word for it.<br> See what our clients say.</h3>
             <div class="flex align-items-c gap-24">
@@ -350,19 +353,29 @@
                 </div>
             </div>
         </div>
-        <div class="testimonials">
+        <div class="testimonials inner-content">
 
         </div>
     </section>
-    <footer class="container">
-        <div>
-            <div class="logo">
-                <a href="#"><img src="./assets/icons/Union.svg" alt="Logo Lullaby"></a>
+    <footer id="footer" class="container container__fluid inner-content"
+        style="background-color: var(--primary-color);">
+        <div class="flex justify-content-sb flex-wrap">
+            <div class="footer__column">
+                <div class="logo">
+                    <a href="#"><img src="./assets/icons/Union.svg" alt="Logo Lullaby" class="filter-white"></a>
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email" class="footer__textbox">
+                    <button>SUBMIT</button>
+                </form>
+                <div class="follow-us flex align-items-c">
+                    <span style="font-size: 18px; color: var(--white-color);">Follow us: </span>
+                    <span><img src="./assets/icons/social-media/facebook.svg" alt="social media facebook"></span>
+                    <span><img src="./assets/icons/social-media/instagram.svg" alt=""></span>
+                    <span><img src="./assets/icons/social-media/logos_spotify-icon.svg" alt=""></span>
+
+                </div>
             </div>
-            <form action="#">
-                <input type="text" placeholder="Enter your email">
-            </form>
-            <p>Follow us: </p>
             <div class="footer__column">
                 <h4>Page</h4>
                 <ul>
@@ -385,18 +398,28 @@
             </div>
             <div class="footer__column">
                 <h4>Contact</h4>
-                <ul>
-                    <li>lullaby@podcast.co</li>
-                    <li>(319) 555-0115</li>
-                    <li>4517 Washington Ave. Manchester, Kentucky 39495</li>
+                <ul class="contact">
+                    <li class="">
+                        <span class="icon"><img src="./assets/icons/contacts/sms.svg" alt=""></span>
+                        <span>lullaby@podcast.co</span>
+                    </li>
+                    <li class="">
+                        <span class="icon"><img src="./assets/icons/contacts/call.svg" alt=""></span>
+                        <span>(319) 555-0115</span>
+                    </li>
+                    <li class="">
+                        <span class="icon"><img src="./assets/icons/contacts/location.svg" alt=""></span>
+                        <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                    </li>
 
                 </ul>
             </div>
         </div>
 
-        <div>
-            <p>Made with by Mystic Lab and Powered by Webflow</p>
-            <div>
+        <div class="footer__bottom flex justify-content-sb">
+            <p style="color: #F7F7F7B2;">Made with by <span style="color: #F7F7F7;">Mystic Lab</span> and Powered by
+                <span style="color: #F7F7F7;">Webflow</span></p>
+            <div class="submenu flex gap-30">
                 <span><a href="">Privacy Policy</a></span>
                 <span><a href="">Term of Service</a></span>
                 <span><a href="">Cookies Settings</a></span>
